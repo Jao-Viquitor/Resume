@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+\textbf{\Huge \scshape João Victor Santos da Costa}
+\end{center}
+
+%-----------Experience-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{cafezinho}{Dec 2023 -- Present}
+{Trainee}{Remote}
+\resumeItemListStart
+\resumeItem{\textbf{Front end Developer} Prototypes, develops, and fixes system functionalities.}
+\resumeItem{\textbf{Scrum Master} Facilitates meetings, such as planning and retrospective sessions, and ensures that the team follows agile practices. Defines and prioritizes the backlog, and is responsible for the product vision and feature approvals.}
+\resumeItem{\textbf{Tech Lead} Provides technical guidance to the team, approves Pull Requests \textit{(PRs)}, and ensures code quality and design system compliance.}
+\resumeItem{\textbf{Software Engineer} Manages the development team, defines task division, and ensures project delivery. Approves and reviews software artifacts.}
+\resumeItemListEnd
+
+\resumeSubheading
+{ERP Vendas}{July 2022 -- October 2022}
+{Trainee}{Remote}
+\resumeItemListStart
+\resumeItem{\textbf{Full Stack Developer} Bug fixing and tool development.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------Extracurriculars-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{CRUD API}{July 2024}
+{Java, Spring, MySQL}{}
+\resumeItemListStart
+\resumeItem{Developed a REST API from scratch using Java with Spring Boot, leveraging MySQL for CRUD operations and Flyway for migrations.}
+\resumeItem{Standardized API controller responses, ensuring proper use of HTTP status codes, with custom exceptions and enums for response codes.}
+\resumeItem{Integrated Spring Security for authentication and access control, using JSON Web Token (JWT) for secure access management.}
+\resumeItem{Adhered to SOLID principles and Clean Code practices to ensure code readability and maintainability.}
+\resumeItemListEnd
+{For more details, visit my GitHub repository: \href{https://github.com/Jao-Viquitor/GEM}{GEM API}.\\}
+
+
+\resumeSubheading
+{Portifolio}{July 2024}
+{React, Vite, CSS}{}
+\resumeItemListStart
+\resumeItem{Developed a portfolio website to showcase my projects and skills.}
+\resumeItem{Styled the site using CSS for a customized and responsive design.}
+\resumeItemListEnd
+{For more details, visit my site: \href{https://viquitor.vercel.app}{Portifolio}.\\}
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Unopar}{Remote}
+{Currently studying the 5th semester of Software Engineering}{Set. 2023 -- present}
+\resumeSubheading
+{Universidade Federal do Pampa}{Alegrete, RS}
+{Completed 6/8 semesters towards a Bachelor of Engineer Software}{Mar. 2017 -- Sept 2022}
+\resumeSubHeadingListEnd
+
+%-----------Skill and Interests-----------
+\section{Skills \& Interests}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\vspace{1mm}
+\textbf{Languages}{: \textbf{Native}: Portuguese -- \textbf{Intermediate}:
+English \& Spanish} \\
+\vspace{1mm}
+\textbf{Technologies:} {Java, Kotlin, Dart, Javascript, PHP, Prolog,
+Haskell, Typescript, SQL, C \& C\#, CSS, HTML, Excel}
+\vspace{1mm}
+\textbf{Frameworks}{: Flutter, React, Spring, Laravel, Jetpack Compose,
+TailwindCSS, Boostrap, MySQL, PostgreSQL, MongoDB} \\
+\vspace{1mm}
+\textbf{Developer Tools}{: IntelliJJ, GitHub, Figma, Vercel, Wordpress, Jira \&
+Trello} \\
+\vspace{1mm}
+
+}}
+\end{itemize}
+\begin{center}
+
+\small +55 55 9 92177324 $|$
+\href{mailto:victorsantos.ft18@gmail.com}{\underline{victorsantos.ft18@gmail.com}} $|$
+\href{linkedin.com/in/viquitor}{\underline{linkedin.com/in/viquitor}}
+\vspace{1mm}
+\\{For more details, visit my site: \href{https://viquitor-me.vercel.app}{\underline{My Social Links}}.\\}
+\end{center}
+
+
+\end{document}
