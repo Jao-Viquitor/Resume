@@ -1,5 +1,6 @@
 # Project exclude paths
 /out/
+/auxil/
 
 # Exclude everything in the out directory
 /out/*
