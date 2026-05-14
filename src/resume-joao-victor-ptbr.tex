@@ -73,6 +73,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeProjectEntry}[2]{
+    \vspace{-2pt}\item
+    \textbf{#1} \\
+    \textit{\small #2}
+    \vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -91,18 +98,17 @@
 \begin{center}
 \textbf{\huge \scshape João Victor Santos da Costa} \\[4pt]
 \small
-Uruguaiana, Rio Grande do Sul \quad|\quad
-+55 (55) 9 9217-7324 \quad|\quad
+Uruguaiana, Rio Grande do Sul \quad|\quad +55 (55) 9 9217-7324 \\[2pt]
 \href{mailto:victorsantos.ft18@gmail.com}{victorsantos.ft18@gmail.com} \quad|\quad
 \href{https://linkedin.com/in/viquitor}{linkedin.com/in/viquitor}
 \end{center}
 
 %-----------RESUMO PROFISSIONAL-----------
 \section{Resumo Profissional}
-Engenheiro de Software com sólida trajetória no desenvolvimento backend, frontend e mobile, aliada à experiência estratégica em liderança técnica e gestão ágil de projetos.
-Especialista em \textbf{Java (Spring Boot)}, \textbf{Kotlin Multiplatform (KMP)} e \textbf{Compose Multiplatform}, com foco na entrega de soluções escaláveis e de clean architecture em múltiplas plataformas.
-Experiente no uso de \textbf{ferramentas de desenvolvimento assistido por IA} --- incluindo Claude, GitHub Copilot/Codex e Antigravity --- para aceleração de geração de código, decisões arquiteturais, criação de testes automatizados e revisões de código.
-Reconhecido pela liderança de equipes multidisciplinares, mentoria de desenvolvedores e aplicação de metodologias Scrum/ágeis para maximizar a eficiência nas entregas.
+Engenheiro de Software com sólida experiência em \textbf{Flutter} e desenvolvimento mobile multiplataforma, especializado em \textbf{Clean Architecture}, \textbf{BLoC/Cubit}, \textbf{Riverpod} e organização por features.
+Atuação em todo o ciclo mobile: consumo de \textbf{APIs REST/JSON} com estratégias de cache e \textbf{offline-first}, testes automatizados (unitários, widget e integração), pipelines de \textbf{CI/CD} e observabilidade com \textbf{Firebase Crashlytics/Analytics}.
+Experiência com design systems acessíveis e internacionalizáveis (i18n), além de background em backend com \textbf{Java (Spring Boot)} e \textbf{Kotlin Multiplatform}.
+Hábito de \textbf{code reviews}, mentoria de desenvolvedores e facilitação de cerimônias ágeis; proficiente no uso de \textbf{ferramentas de IA} (Claude, GitHub Copilot, Antigravity) para acelerar arquitetura, geração de código e scaffolding de testes.
 
 %-----------EXPERIÊNCIA-----------
 \section{Experiência Profissional}
@@ -110,14 +116,16 @@ Reconhecido pela liderança de equipes multidisciplinares, mentoria de desenvolv
 
 \resumeSubheading
 {RCDNC}{Dez. 2023 -- Dez. 2025}
-{Engenheiro de Software / Tech Lead}{Remoto}
+{Engenheiro de Software Mobile}{Remoto}
 \resumeItemListStart
-    \resumeItem{\textbf{Desenvolvimento Backend:} Ciclo completo de desenvolvimento de APIs RESTful escaláveis e microsserviços utilizando \textbf{Java (Spring Boot)} e \textbf{PHP (Laravel)}, com clean architecture e princípios SOLID.}
-    \resumeItem{\textbf{Mobile e Multiplataforma:} Desenvolvimento e otimização de aplicações cross-platform com \textbf{Kotlin Multiplatform (KMP)} e \textbf{Compose Multiplatform}, compartilhando lógica de negócio entre Android e iOS.}
-    \resumeItem{\textbf{Desenvolvimento Assistido por IA:} Integração de \textbf{Claude (Anthropic)}, \textbf{GitHub Copilot / Codex} e \textbf{Antigravity} ao fluxo de desenvolvimento para geração de código, orientação arquitetural, scaffolding de testes automatizados e revisões inteligentes de código.}
-    \resumeItem{\textbf{Testes Automatizados:} Criação e manutenção de suítes de testes unitários, de integração e ponta a ponta (JUnit, Mockito, Compose UI Tests), utilizando ferramentas de IA (Antigravity) para geração de casos de teste, aumentando a cobertura e reduzindo defeitos pós-release.}
-    \resumeItem{\textbf{Persistência de Dados:} Modelagem e integração de bancos de dados relacionais (\textbf{MySQL}, \textbf{PostgreSQL}), garantindo integridade, consistência referencial e performance de consultas.}
-    \resumeItem{\textbf{Tech Lead:} Gestão e mentoria de desenvolvedores júnior e estagiários, realização de code reviews, aplicação de padrões arquiteturais e facilitação de cerimônias Scrum (planejamento de sprint, retrospectivas, dailies).}
+    \resumeItem{\textbf{Flutter (Foco Principal):} Desenvolvimento e evolução de aplicações mobile com \textbf{Clean Architecture} e organização por features, utilizando widgets Stateless/Stateful, layouts responsivos, temas customizados e animações com performance otimizada.}
+    \resumeItem{\textbf{Gerenciamento de Estado:} Implementação de \textbf{BLoC/Cubit} e \textbf{Riverpod} como padrões centrais de gerenciamento de estado, garantindo previsibilidade e testabilidade do fluxo de dados (MVI/MVVM).}
+    \resumeItem{\textbf{Testes Automatizados:} Criação de suítes de testes unitários, widget e de integração com \textbf{Mocktail/Mockito} e Golden Tests; adoção de práticas \textbf{TDD} para garantir cobertura e reduzir defeitos pós-release.}
+    \resumeItem{\textbf{Integração de APIs e Offline-First:} Consumo de \textbf{APIs REST/JSON} com interceptors (Dio), paginação, retries e autenticação via \textbf{OAuth2/JWT}; implementação de cache com \textbf{Hive} e estratégias \textbf{offline-first} via \textbf{sqflite}.}
+    \resumeItem{\textbf{CI/CD e Observabilidade:} Configuração de pipelines com \textbf{GitHub Actions}, assinatura e distribuição de apps (Play Console); monitoramento de crashes e métricas com \textbf{Firebase Crashlytics/Analytics} e logs estruturados.}
+    \resumeItem{\textbf{Segurança Mobile:} Implementação de \textbf{Secure Storage} para tokens sensíveis e boas práticas \textbf{OWASP Mobile}; gerenciamento de sessões com refresh token automatizado.}
+    \resumeItem{\textbf{Colaboração e Qualidade:} Participação na definição de padrões arquiteturais junto ao time, realização de code reviews, mentoria de desenvolvedores juniores e facilitação de cerimônias Scrum.}
+    \resumeItem{\textbf{Backend Complementar:} Desenvolvimento de APIs RESTful escaláveis com \textbf{Java (Spring Boot)} e \textbf{PHP (Laravel)}, integradas às aplicações mobile.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -141,8 +149,7 @@ Reconhecido pela liderança de equipes multidisciplinares, mentoria de desenvolv
 {Apoio Administrativo e Comunicação}{Alegrete, RS}
 \resumeItemListStart
     \resumeItem{Gerenciamento do blog oficial do curso (WordPress) e estratégia de redes sociais para ampliar a visibilidade de projetos acadêmicos.}
-    \resumeItem{Coordenação do planejamento e divulgação da \textbf{ERES 2021} (Escola Regional de Engenharia de Software), um dos principais eventos acadêmicos da área na região.}
-    \resumeItem{Suporte direto aos processos administrativos e operacionais da coordenação do curso de Engenharia de Software.}
+    \resumeItem{Coordenação do planejamento e divulgação da \textbf{ERES 2021} (Escola Regional de Engenharia de Software).}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -151,24 +158,23 @@ Reconhecido pela liderança de equipes multidisciplinares, mentoria de desenvolv
 \section{Projetos Relevantes}
 \resumeSubHeadingListStart
 
-\resumeSubheading
-{Virtuosa -- Ecossistema de Aprendizado de Órgão Eletrônico}{}
-{Kotlin, Spring Boot 3, Flutter, Python, Next.js, PostgreSQL, Firebase, Fly.io, Supabase}{}
+\resumeProjectEntry
+{Virtuosa -- Ecossistema de Aprendizado de Órgão Eletrônico}
+{Flutter, Riverpod, GoRouter, Kotlin, Spring Boot 3, Python, Next.js, PostgreSQL, Firebase}
 \resumeItemListStart
-    \resumeItem{Arquitetou um \textbf{ecossistema full-stack multi-módulo} composto por API Backend, App Mobile, portal Web e microsserviço de Análise de Áudio --- todos em produção no Fly.io.}
-    \resumeItem{\textbf{Backend (Kotlin + Spring Boot 3):} API REST com arquitetura orientada a features, \textbf{Spring Security / JWT}, migrações via \textbf{Flyway}, documentação \textbf{OpenAPI/Swagger} e notificações push via Firebase Cloud Messaging (FCM). Deploy no Fly.io com PostgreSQL (Supabase).}
-    \resumeItem{\textbf{Mobile (Flutter + Riverpod):} Aplicativo cross-platform com Clean Architecture, MVVM, navegação via GoRouter e design system exclusivo \textit{Sacred Minimalism} (EB Garamond / Cinzel), com suporte completo a acessibilidade (TalkBack / VoiceOver).}
-    \resumeItem{\textbf{Análise de Áudio (Python + Librosa):} Microsserviço de DSP para detecção automática de BPM, onset detection, beat tracking e análise espectral, validando sessões de prática e alimentando o motor de gamificação com XP.}
-    \resumeItem{\textbf{Web (Next.js + TypeScript):} Landing page de alto impacto visual com SEO avançado, glassmorphism, micro-animações e responsividade total; deploy na Vercel.}
-    \resumeItem{Implementação de \textbf{sistema de gamificação} (XP, níveis, ofensivas/streaks, conquistas) com multiplicadores de desempenho por BPM e motor de progressão pedagógica com gates de aprovação da instrutora.}
+    \resumeItem{\textbf{Mobile (Flutter + Riverpod):} Aplicativo cross-platform com \textbf{Clean Architecture}, organização por features e padrão \textbf{MVVM}; navegação com \textbf{GoRouter}, design system exclusivo (\textit{Sacred Minimalism}) e suporte completo a \textbf{acessibilidade} (Semantics/TalkBack/VoiceOver) e \textbf{internacionalização (i18n)}.}
+    \resumeItem{Implementação de \textbf{Secure Storage} para tokens JWT, cache local com \textbf{Hive} e cenários \textbf{offline-first}; notificações push via \textbf{Firebase Cloud Messaging (FCM)}.}
+    \resumeItem{Testes automatizados com Golden Tests, testes widget e unitários com \textbf{Mocktail}; CI/CD via \textbf{GitHub Actions} com distribuição pelo \textbf{Play Console}.}
+    \resumeItem{\textbf{Backend (Kotlin + Spring Boot 3):} API REST com Spring Security / JWT, Flyway, documentação \textbf{OpenAPI/Swagger} e FCM. Deploy no Fly.io com PostgreSQL (Supabase).}
+    \resumeItem{\textbf{Análise de Áudio (Python + Librosa):} Microsserviço de DSP para detecção de BPM, onset detection e beat tracking, alimentando motor de gamificação com XP.}
     \resumeItem{Repositório: \href{https://github.com/Jao-Viquitor/virtuosa}{github.com/Jao-Viquitor/virtuosa}}
 \resumeItemListEnd
 
-\resumeSubheading
-{Portfólio Pessoal}{}
-{React, Vite, CSS}{}
+\resumeProjectEntry
+{Portfólio Pessoal}
+{React, Vite, CSS}
 \resumeItemListStart
-    \resumeItem{Desenvolvimento de portfólio responsivo para apresentação de projetos e habilidades técnicas, com otimizações de performance para carregamento rápido.}
+    \resumeItem{Portfólio responsivo com otimizações de performance e SEO avançado.}
     \resumeItem{Disponível em: \href{https://viquitor-me.vercel.app}{viquitor-me.vercel.app}}
 \resumeItemListEnd
 
@@ -190,27 +196,37 @@ Reconhecido pela liderança de equipes multidisciplinares, mentoria de desenvolv
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
 \vspace{1mm}
-\textbf{Linguagens de Programação:} Java, Kotlin, Dart, JavaScript (ES6+), TypeScript, PHP, Python, SQL, HTML5, CSS3 \\
+\textbf{Linguagens:} Dart, Kotlin, Java, JavaScript (ES6+), TypeScript, PHP, Python, SQL \\
 \vspace{1mm}
-\textbf{Backend:} Spring Boot, Laravel, Flask, API REST, Microsserviços, Clean Architecture, SOLID, JWT, Flyway \\
+\textbf{Flutter:} Widgets (Stateless/Stateful), layouts responsivos, temas, animações, Design Systems, micro-frontends, streams, Platform Channels, i18n, Semantics (acessibilidade) \\
 \vspace{1mm}
-\textbf{Mobile e Multiplataforma:} Kotlin Multiplatform (KMP), Compose Multiplatform, Android Nativo, Flutter \\
+\textbf{Gerenciamento de Estado:} BLoC/Cubit, Riverpod, Provider \\
 \vspace{1mm}
-\textbf{Frontend:} Vue.js 3, React.js, Vite, Tailwind CSS, Bootstrap \\
+\textbf{Testes Flutter:} Unitários, widget, integração, Golden Tests, Mocktail, Mockito, TDD \\
+\vspace{1mm}
+\textbf{Integração e Segurança:} REST/JSON, Dio (interceptors, paginação, retries), OpenAPI, OAuth2/OIDC/JWT, Secure Storage, OWASP Mobile \\
+\vspace{1mm}
+\textbf{Persistência e Cache:} sqflite, Hive, estratégia offline-first \\
+\vspace{1mm}
+\textbf{CI/CD e Distribuição:} GitHub Actions, Jenkins, assinatura de apps, TestFlight, Play Console \\
+\vspace{1mm}
+\textbf{Observabilidade:} Firebase Crashlytics, Firebase Analytics, Dynatrace, logs estruturados \\
+\vspace{1mm}
+\textbf{Feature Flags e A/B:} ConfigCat, Firebase Remote Config \\
+\vspace{1mm}
+\textbf{Multiplataforma:} Kotlin Multiplatform (KMP), Compose Multiplatform, Android Nativo, iOS lifecycle/permissões \\
+\vspace{1mm}
+\textbf{Backend:} Spring Boot, Laravel, Flask, Clean Architecture, SOLID, Flyway, Microsserviços \\
 \vspace{1mm}
 \textbf{Bancos de Dados:} MySQL, PostgreSQL, MongoDB \\
 \vspace{1mm}
-\textbf{IA e Ferramentas de Desenvolvimento:} Claude (Anthropic), GitHub Copilot, Codex (OpenAI), Antigravity -- aplicados à geração de código, revisão arquitetural, scaffolding de testes e revisão inteligente de PRs \\
+\textbf{IA e Desenvolvimento:} Claude (Anthropic), GitHub Copilot, Codex, Antigravity -- geração de código, revisão arquitetural, scaffolding de testes \\
 \vspace{1mm}
-\textbf{DevOps e Infraestrutura:} Git, GitHub, Docker, Vercel, Render, CI/CD \\
+\textbf{Gestão:} Scrum, Jira, Trello, Figma (UI/UX) \\
 \vspace{1mm}
-\textbf{Testes:} JUnit, Mockito, Compose UI Tests, geração de testes automatizados com IA \\
+\textbf{Idiomas:} Português (Nativo), Inglês (Intermediário -- Leitura técnica), Espanhol (Intermediário -- Leitura e Conversação) \\
 \vspace{1mm}
-\textbf{Gestão e Design:} Scrum, Jira, Trello, Figma (UI/UX), WordPress \\
-\vspace{1mm}
-\textbf{Idiomas:} Português (Nativo), Inglês (Intermediário -- Leitura), Espanhol (Intermediário -- Leitura e Conversação) \\
-\vspace{1mm}
-\textbf{Soft Skills:} Liderança Técnica, Mentoria, Pensamento Analítico, Resolução de Problemas, Comunicação Assertiva, Adaptabilidade, Gestão de Processos, Organização \\
+\textbf{Soft Skills:} Mentoria, Code Review, Pensamento Analítico, Comunicação Assertiva, Adaptabilidade \\
 \vspace{1mm}
 }}
 \end{itemize}
@@ -223,7 +239,7 @@ Reconhecido pela liderança de equipes multidisciplinares, mentoria de desenvolv
 {Membro Estatutário -- Tesouraria e Secretariado}{}
 \resumeItemListStart
     \resumeItem{Gestão de tesouraria com controle de fluxo de caixa, conciliação de entradas e saídas e documentação oficial.}
-    \resumeItem{Organização de assembleias e reuniões administrativas; elaboração e validação de atas oficiais garantindo conformidade estatutária.}
+    \resumeItem{Organização de assembleias e reuniões administrativas; elaboração e validação de atas oficiais.}
 \resumeItemListEnd
 \resumeSubheading
 {Congregação Cristã no Brasil}{2014 -- Presente}

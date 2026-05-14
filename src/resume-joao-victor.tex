@@ -71,6 +71,13 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumeProjectEntry}[2]{
+    \vspace{-2pt}\item
+    \textbf{#1} \\
+    \textit{\small #2}
+    \vspace{-5pt}
+}
+
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -89,18 +96,17 @@
 \begin{center}
 \textbf{\huge \scshape João Victor Santos da Costa} \\[4pt]
 \small
-Uruguaiana, Rio Grande do Sul \quad|\quad
-+55 (55) 9 9217-7324 \quad|\quad
+Uruguaiana, Rio Grande do Sul \quad|\quad +55 (55) 9 9217-7324 \\[2pt]
 \href{mailto:victorsantos.ft18@gmail.com}{victorsantos.ft18@gmail.com} \quad|\quad
 \href{https://linkedin.com/in/viquitor}{linkedin.com/in/viquitor}
 \end{center}
 
 %-----------SUMMARY-----------
 \section{Professional Summary}
-Software Engineer with a proven track record in full-cycle backend, frontend, and mobile development, combined with strategic experience in technical leadership and agile project management.
+Software Engineer with a proven track record in full-cycle backend, frontend, and mobile development, combined with experience in team collaboration and agile project management.
 Specialist in \textbf{Java (Spring Boot)}, \textbf{Kotlin Multiplatform (KMP)}, and \textbf{Compose Multiplatform}, delivering scalable, clean-architecture solutions across multiple platforms.
 Experienced in leveraging \textbf{AI-assisted development} — including Claude, GitHub Copilot/Codex, and Antigravity — to accelerate code generation, architectural decisions, automated test creation, and code reviews.
-Recognized for leading multidisciplinary teams, mentoring engineers, and applying Scrum/agile methodologies to maximize delivery efficiency.
+Recognized for conducting code reviews, mentoring junior engineers, and applying Scrum/agile methodologies to maximize delivery efficiency.
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -108,14 +114,14 @@ Recognized for leading multidisciplinary teams, mentoring engineers, and applyin
 
 \resumeSubheading
 {RCDNC}{Dec. 2023 -- Dec. 2025}
-{Software Engineer / Tech Lead}{Remote}
+{Software Engineer}{Remote}
 \resumeItemListStart
     \resumeItem{\textbf{Backend Development:} Full-cycle development of scalable RESTful APIs and microservices using \textbf{Java (Spring Boot)} and \textbf{PHP (Laravel)}, with clean architecture and SOLID principles.}
     \resumeItem{\textbf{Mobile \& Multiplatform:} Development and optimization of cross-platform applications using \textbf{Kotlin Multiplatform (KMP)} and \textbf{Compose Multiplatform}, with shared business logic targeting Android and iOS.}
     \resumeItem{\textbf{AI-Assisted Development:} Integrated \textbf{Claude (Anthropic)}, \textbf{GitHub Copilot / Codex}, and \textbf{Antigravity} into the development workflow for AI-powered code generation, architectural guidance, automated test scaffolding, and intelligent code reviews, reducing feature delivery time significantly.}
     \resumeItem{\textbf{Automated Testing:} Authored and maintained unit, integration, and end-to-end test suites (JUnit, Mockito, Compose UI Tests) using AI tooling (Antigravity) to generate test cases, increasing code coverage and reducing post-release defects.}
     \resumeItem{\textbf{Data Persistence:} Modeled and integrated relational databases (\textbf{MySQL}, \textbf{PostgreSQL}), ensuring data integrity, referential consistency, and query performance.}
-    \resumeItem{\textbf{Tech Lead:} Managed and mentored junior developers and interns, conducted code reviews, enforced design system and architectural standards, and facilitated Scrum ceremonies (sprint planning, retrospectives, daily stand-ups).}
+    \resumeItem{\textbf{Team Collaboration \& Mentoring:} Conducted code reviews, enforced design system and architectural standards, mentored junior developers and interns, and facilitated Scrum ceremonies (sprint planning, retrospectives, daily stand-ups).}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -150,9 +156,9 @@ Recognized for leading multidisciplinary teams, mentoring engineers, and applyin
 \resumeSubHeadingListStart
 
 
-\resumeSubheading
-{Virtuosa -- Electronic Organ Learning Ecosystem}{}
-{Kotlin, Spring Boot 3, Flutter, Python, Next.js, PostgreSQL, Firebase, Fly.io, Supabase}{}
+\resumeProjectEntry
+{Virtuosa -- Electronic Organ Learning Ecosystem}
+{Kotlin, Spring Boot 3, Flutter, Python, Next.js, PostgreSQL, Firebase, Fly.io, Supabase}
 \resumeItemListStart
     \resumeItem{Architected a \textbf{full-stack, multi-module educational ecosystem} covering Backend API, Mobile App, Web/Admin portal, and an Audio Analysis microservice -- all production-ready on Fly.io.}
     \resumeItem{\textbf{Backend (Kotlin + Spring Boot 3):} Designed a Feature-Based REST API with \textbf{Spring Security / JWT}, \textbf{Flyway} migrations, \textbf{OpenAPI/Swagger} docs, and Firebase Cloud Messaging (FCM) for push notifications. Deployed on Fly.io with PostgreSQL (Supabase).}
@@ -163,9 +169,9 @@ Recognized for leading multidisciplinary teams, mentoring engineers, and applyin
     \resumeItem{Repository: \href{https://github.com/Jao-Viquitor/virtuosa}{github.com/Jao-Viquitor/virtuosa}}
 \resumeItemListEnd
 
-\resumeSubheading
-{Portfolio Website}{}
-{React, Vite, CSS}{}
+\resumeProjectEntry
+{Portfolio Website}
+{React, Vite, CSS}
 \resumeItemListStart
     \resumeItem{Developed a responsive portfolio showcasing projects and technical skills, with performance optimizations for fast load times.}
     \resumeItem{Live at: \href{https://viquitor-me.vercel.app}{viquitor-me.vercel.app}}
