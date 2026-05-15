@@ -1,0 +1,206 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[brazil]{babel}
+\usepackage{tabularx}
+\usepackage{mathptmx}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margens
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Formatação de seções
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Comandos customizados
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectEntry}[2]{
+    \vspace{-2pt}\item
+    \textbf{#1} \\
+    \textit{\small #2}
+    \vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CURRÍCULO COMEÇA AQUI  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------CABEÇALHO----------
+\begin{center}
+\textbf{\huge \scshape João Victor Santos da Costa} \\[4pt]
+\small
+Uruguaiana, Rio Grande do Sul (Remoto) \quad|\quad +55 (55) 9 9217-7324 \\[2pt]
+\href{mailto:victorsantos.ft18@gmail.com}{victorsantos.ft18@gmail.com} \quad|\quad
+\href{https://linkedin.com/in/viquitor}{linkedin.com/in/viquitor} \quad|\quad
+\href{https://github.com/Jao-Viquitor}{github.com/Jao-Viquitor}
+\end{center}
+
+%-----------RESUMO PROFISSIONAL-----------
+\section{Resumo Profissional}
+Engenheiro de Software com experiência em desenvolvimento \textbf{Fullstack}, especializado na criação de aplicações inteligentes utilizando \textbf{Python (FastAPI, Flask)} e frameworks modernos de frontend. Proficiente em \textbf{TypeScript, HTML5 e CSS3}, com forte base em arquiteturas de \textbf{APIs REST} e integrações complexas.
+Entusiasta de Inteligência Artificial, com experiência prática no uso de \textbf{LLMs e ferramentas de Copiloto} (GitHub Copilot, Claude, Antigravity) para otimização de workflow, geração de código e arquitetura.
+Sólidos conhecimentos em \textbf{SQL e bancos de dados relacionais} (PostgreSQL, MySQL), além de vivência em metodologias ágeis e boas práticas de desenvolvimento (Clean Code, SOLID). Disponibilidade imediata para atuação remota.
+
+%-----------HABILIDADES-----------
+\section{Habilidades e Tecnologias}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Linguagens:} Python, TypeScript, JavaScript (ES6+), Java, Kotlin, SQL, HTML5, CSS3 \\
+\vspace{1mm}
+\textbf{Frontend:} Angular (Interesse/Aprendizado acelerado), React, Next.js, Redux, Tailwind CSS \\
+\vspace{1mm}
+\textbf{Backend:} FastAPI, Flask, Django, Node.js, Spring Boot \\
+\vspace{1mm}
+\textbf{Inteligência Artificial:} Experiência com LLMs (OpenAI, Claude), LangChain, GitHub Copilot, Antigravity Agent, Engenharia de Prompt \\
+\vspace{1mm}
+\textbf{Bancos de Dados:} PostgreSQL, MySQL, SQLite, MongoDB \\
+\vspace{1mm}
+\textbf{Ferramentas \& DevOps:} Git, Docker, Kubernetes, CI/CD (GitHub Actions), APIs RESTful \\
+\vspace{1mm}
+\textbf{Qualidade:} Clean Code, SOLID, Testes Unitários e de Integração, TDD \\
+\vspace{1mm}
+\textbf{Soft Skills:} Proatividade, Comunicação Assertiva, Protagonismo em IA, Colaboração Remota
+}}
+\end{itemize}
+
+%-----------EXPERIÊNCIA-----------
+\section{Experiência Profissional}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{RCDNC}{Dez. 2023 -- Dez. 2025}
+{Engenheiro de Software Fullstack (Foco em IA e Automação)}{Remoto}
+\resumeItemListStart
+    \resumeItem{\textbf{Desenvolvimento IA-Assisted:} Utilização avançada de ferramentas de IA e copilotos de código para acelerar o desenvolvimento de features, refatoração de código legado e criação de suítes de testes.}
+    \resumeItem{\textbf{Backend com Python:} Implementação de microsserviços e integrações utilizando \textbf{Python (FastAPI)}, focando em performance e escalabilidade de APIs REST.}
+    \resumeItem{\textbf{Integrações e APIs:} Desenvolvimento de conectores para APIs de terceiros e serviços internos, garantindo a fluidez do tráfego de dados e segurança via OAuth2/JWT.}
+    \resumeItem{\textbf{Bancos de Dados:} Modelagem e otimização de queries \textbf{SQL} em bancos relacionais, assegurando a integridade e performance das aplicações.}
+    \resumeItem{\textbf{Frontend Moderno:} Atuação no desenvolvimento de interfaces responsivas com \textbf{TypeScript} e frameworks SPAs, garantindo acessibilidade e experiência do usuário (UX).}
+    \resumeItem{\textbf{Boas Práticas:} Mentoria de desenvolvedores e aplicação rigorosa de \textbf{SOLID} e \textbf{Clean Architecture} em projetos mobile e web.}
+\resumeItemListEnd
+
+\resumeSubheading
+{ERP Vendas}{Jul. 2022 -- Out. 2022}
+{Desenvolvedor Fullstack}{Remoto}
+\resumeItemListStart
+    \resumeItem{Manutenção e evolução de sistemas de gestão (ERP), atuando tanto no backend quanto no frontend para resolver bugs complexos e implementar novas funcionalidades.}
+    \resumeItem{Otimização de consultas em bancos de dados relacionais, reduzindo o tempo de carregamento de relatórios e módulos de vendas.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Aroma do Sul}{Jun. 2020 -- Out. 2023}
+{Gerente de Loja (Gestão e Protagonismo)}{Uruguaiana, RS}
+\resumeItemListStart
+    \resumeItem{Gestão de operações e marketing digital, desenvolvendo forte visão de negócio, responsabilidade e proatividade em ambientes dinâmicos.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJETOS-----------
+\section{Projetos Relevantes}
+\resumeSubHeadingListStart
+
+\resumeProjectEntry
+{Virtuosa -- Processamento Inteligente de Áudio}
+{Python, Librosa, FastAPI, React, PostgreSQL, Docker}
+\resumeItemListStart
+    \resumeItem{\textbf{Backend Inteligente:} Desenvolvimento de microsserviço em \textbf{Python} utilizando a biblioteca \textbf{Librosa} para processamento digital de sinais (DSP) e análise inteligente de BPM e padrões musicais.}
+    \resumeItem{\textbf{API REST:} Exposição de dados processados via \textbf{FastAPI}, integrando o motor de análise ao ecossistema mobile/web.}
+    \resumeItem{\textbf{Frontend:} Criação de dashboard administrativo com \textbf{TypeScript/React} para monitoramento de métricas e controle de usuários.}
+    \resumeItem{\textbf{Infraestrutura:} Conteinerização completa do ambiente com \textbf{Docker}, facilitando o deploy e a escalabilidade dos serviços de processamento.}
+    \resumeItem{Repositório: \href{https://github.com/Jao-Viquitor/virtuosa}{github.com/Jao-Viquitor/virtuosa}}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------FORMAÇÃO-----------
+\section{Formação Acadêmica}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Unopar}{Remoto}
+{Bacharelado em Engenharia de Software -- Concluído em Dez. 2025}{Mar. 2024 -- Dez. 2025}
+\resumeSubheading
+{Universidade Federal do Pampa (Unipampa)}{Alegrete, RS}
+{Bacharelado em Engenharia de Software -- Cursados semestres 1--5}{Mar. 2017 -- Set. 2022}
+\resumeSubHeadingListEnd
+
+%-----------IDIOMAS-----------
+\section{Idiomas}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Português:} Nativo \\
+    \textbf{Inglês:} Intermediário (Leitura técnica e interação com documentação de IA) \\
+    \textbf{Espanhol:} Intermediário
+    }}
+\end{itemize}
+
+\end{document}
